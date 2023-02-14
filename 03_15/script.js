@@ -7,6 +7,7 @@
 
 import Backpack from "./Backpack.js";
 import Book from "./Book.js";
+import MyBook from "./MyBook.js";
 
 const everydayPack = new Backpack(
   "Everyday Backpack",
@@ -78,3 +79,17 @@ const zen = new Book(
   "Finished"
 )
 console.log(zen);
+
+const book1 = new MyBook(
+  "HuckleBerry & Finn",
+  "David Powell",
+  "A24DB9DCXZ",
+  Date("December 16 1945"),
+  367,
+  56,
+  "Publishing House",
+  false
+);
+
+console.log(book1);
+console.log(book1.getHowMuchLeft())

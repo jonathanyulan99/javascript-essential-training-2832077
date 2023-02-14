@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module demo</title>
+    <!-- Moving the script tags to the bottom also introduces more issues, thus we need to \
+    split up or use new tools (ASYNC | DEFER) -->
+    <!-- Browser stops rendering when JS is encountered. JS is executed before rendering continues\
+    Often referred to counten blocking. Content or Rendered BLocking b/c JS halts the HTML parsing-->
     <script src="script.js" defer></script>
+    <!-- ASYNC: browser downloads JS in parallel while HTML renders(HTML PARSING). When JS is \
+    fully downloaded (JS download) rendering stops while JS is executed(JS EXECUTED). All three\
+    steps must take part.-->
+    <!-- DEFER: Browser downloads JS (JS download) in parallel while HTML renders, then defers\
+    execution of JavaScript until HTML rendering is complete. -->
   </head>
   <body></body>
 </html>

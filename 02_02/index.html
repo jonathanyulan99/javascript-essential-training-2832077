@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module demo</title>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> This is causing the issue-->
+    <!-- The Script causes the rendering of the HTML to cease, the script gets read \
+      first thus never rendering the HTML because the script relies on the HMTL specifically\
+      when appending the child to the .  -->
   </head>
   <body></body>
+  <!-- move the script to after the rendering of the HTML to fix; we can use ASYNC/TIMEOUTS \
+  later. -->
+  <script src='./script.js'></script> 
 </html>

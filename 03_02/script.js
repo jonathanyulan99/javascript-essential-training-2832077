@@ -2,6 +2,8 @@
  * Create a Backpack object.
  */
 
+// `const` is the main way of initializing and defining an Object -> here being the backpack 
+// backpack is the name of the object we are defining 
 const backpack = {
   name: "Everyday Backpack",
   volume: 30,

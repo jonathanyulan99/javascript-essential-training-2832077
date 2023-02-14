@@ -1,6 +1,7 @@
 /**
  * Create a Backpack object, populate some HTML to display its properties.
  */
+// This is how to import MODULES (./backpack.js) into your main script.js 
 import backpack from "./backpack.js";
 
 const markup = (backpack) => {
